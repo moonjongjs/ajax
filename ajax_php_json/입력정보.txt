@@ -1,0 +1,9 @@
+010-7942-5305
+경기도 고양시 일산서구 주엽동 
+서울시 서초구 서초동 더조은컴퓨터아카데미
+
+0. 데이터베이스 각 개인 계정 아이디 - 닷홈서버
+1. 서버에 테이블 만들기 (create table address) - MYSQL+PHP+FTP+닷홈서버
+2. 만들어진 테이블에 데이터 입력하기 (insert into address) -  JS[AJAX]+MYSQL+PHP+FTP+닷홈서버
+3. 입력정보 목록 확인 하기 (select * from address) -  JS[AJAX]+MYSQL+PHP+FTP+닷홈서버
+4. 목록버튼 클릭시 화면에 테이블로 출력 - HTML5+CSS3+JS[AJAX]+MYSQL+PHP+FTP+닷홈서버

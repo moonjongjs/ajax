@@ -1,0 +1,103 @@
+깃설치 및  리눅스 기본 명령어 악히기
+
+https://git-scm.com
+
+설치시작
+
+설치완료
+윈도우 검색창에
+
+git bash
+
+git
+
+
+git 환경설정
+사용자장보 입력
+
+$ git  config  —global user.name “moonjongjs”
+$ git  config  —global user.mail  “moon@na..”
+m
+
+
+리눅스 명령어 익히기
+
+현재 디렉토리 위치
+
+pwd
+(Print  Working  Directory) 
+
+
+목록 보기
+
+ls
+
+디렉토리 상세정보 보기
+
+ls  -la
+
+
+/
+ls 명령 옵션
+
+ls -l상세정보
+ls -a 숨김파일도 출력
+ls -r 역순출력
+ls -t 작성시간 내림차순
+
+
+
+리눅스 디렉토리 나타내는 기호
+
+~  현재 접속중인 홈디렉토리
+./  현재 위치
+../  이전 위치
+
+디렉토리 만들기
+
+mkdir  test
+ls
+
+
+디렉토리 하위 디렉토리와 파일 모두삭제 옵션
+rm  -r
+
+
+
+git   에서  문서편집기  Vim 리눅스 기본 편집기
+git 설치시 기본설치된거임
+
+문서만들기
+
+vim  test.txt
+
+
+입력모드  키보드
+i  또는 a  입력 수정 모드
+
+텍스트 입력  ㅋㅋㅎㅎㅎ
+
+
+
+esc 키  입력모드에서  ex 모드  저장 종료모드
+
+
+저장 종료
+:wq  엔터
+
+
+
+:q!  엔터  저장않고 종료
+
+
+문서내용 확인하기
+cat  test.txt
+
+
+
+정리
+그외
+
+화면 지우기  clear  
+
+터미날 종료  exit

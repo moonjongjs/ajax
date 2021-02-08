@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+#wrap{width:100%;height:auto;}
+
+/* ////////////////////////// */
+#skip{z-index:4;position:absolute;top:0;left:0;width:100%;height:auto;}
+#skip>li{position:absolute;top:0;left:0;width:100%;height:auto;font-size:0;}
+#skip>li>a{display:block;padding:0;text-align:center;font-size:0;color:#444;background:#fff;}
+#skip>li>a:focus{padding:27.5px 0;font-size:20px;}
+/* ////////////////////////// */
+
+
+/* ////////////////////////// */
+#header{z-index:3;position:fixed;top:0;left:0;width:100%;height:75px;background:transparent;border-bottom:1px solid rgba(255,255,255, 0.3);transition:all 0.3s;}
+#header.addfixed{height:60px;background:#000;border-bottom:0;transition:all 0.3s;}
+
+.header-wrap{position:relative;height:auto;}
+
+.mobile-nav-wrap{display:none;position:absolute;top:75px;left:0;width:100%;height:auto;transition:all 0.4s;}
+.mobile-nav-wrap.addfixed{top:60px;transition:all 0.4s;}
+
+.mobile-nav-wrap{width:100%;}
+.mobile-nav-wrap>li{width:100%;border-top:1px solid #222;}
+.mobile-nav-wrap>li>a{display:block;width:100%;padding:20px 0;text-align:center;background:#000;color:#f1f1f1;}
+
+
+.header-nav-wrap{width:100%;position:relative;}
+.header-nav-wrap>li:nth-child(1){float:left;}
+.header-nav-wrap>li:nth-child(2){float:left;}
+.header-nav-wrap>li:nth-child(3){float:left;}
+.header-nav-wrap>li:nth-child(4){float:right;}
+
+/* 모바일 3선 버튼 */
+.header-nav-wrap>li:last-child{position:relative;display:none;margin-top:29.5px;margin-right:10px;float:right;width:28px;height:16px;transition:all 0.4s;}
+.header-nav-wrap>li:last-child.addfixed{margin-top:22px;transition:all 0.4s;}
+
+.gnb3Bt-wrap{overflow:hidden;z-index:1;position:relative;width:100%;height:100%;}
+.gnbLine{position:absolute;left:0;width:100%;height:2px;background:#fff;}
+.gnbLine1{top:0;transform:rotate(0deg);transition:all 0.4s;}
+.gnbLine1.addGnb3Line{top:50%;margin-top:-1px;transform:rotate(45deg);transition:all 0.4s;}
+.gnbLine2{top:50%;margin-top:-1px;left:0;opacity:1;transition:all 0.4s;}
+.gnbLine2.addGnb3Line{top:50%;margin-top:-1px;left:100%;opacity:0;transition:all 0.4s;}
+.gnbLine3{bottom:0;transform:rotate(0deg);transition:all 0.4s;}
+.gnbLine3.addGnb3Line{bottom:50%;margin-bottom:-1px;transform:rotate(-45deg);transition:all 0.4s;}
+
+
+
+
+.gnb3Bt{z-index:2;position:absolute;top:0;left:0;width:100%;height:100%;background:transparent;}
+
+/* Logo Button */
+.header-nav-wrap>li>h1{width:auto;height:30px;padding-top:22.5px;transition:all 0.4s;}
+.header-nav-wrap>li>h1.addfixed{padding-top:15px;transition:all 0.4s;}
+.header-nav-wrap>li>h1>a>img{width:auto;height:100%;max-height:30px;}
+.header-nav-wrap>li>p{width:1px;height:25px;background:#ccc;margin:26px 40px 0 20px;transition:all 0.4s;}
+.header-nav-wrap>li>p.addfixed{margin:18px 40px 0 20px;transition:all 0.4s;}
+
+/* Main Button */
+.mainBt-wrap{padding-top:32px;transition:all 0.4s;}
+.mainBt-wrap.addfixed{padding-top:25px;transition:all 0.4s;}
+.mainBt-wrap>li{float:left;margin-right:40px;}
+.mainBt-wrap>li>a{font-size:12px;letter-spacing:1px;color:#fff;font-weight:700;transition:all 0.4s;}
+.mainBt-wrap>li>a:hover{color:#ccc;transition:all 0.4s;}
+
+/* Aside Button */
+.asideBt-wrap{padding-top:22px;transition:all 0.4s;}
+.asideBt-wrap.addfixed{padding-top:15px;transition:all 0.4s;}
+.asideBt-wrap>li{float:left;color:#fff;font-size:12px;letter-spacing:1px;margin-left:10px;}
+.asideBt-wrap>li:first-child{margin-top:9px;}
+.asideBt-wrap>li>a{display:block;font-size:12px;letter-spacing:1px;text-align:center;color:#fff;font-weight:700;padding:7px 20px;border:2px solid #fff;background:transparent;transition:all 0.4s;}
+.asideBt-wrap>li>a:hover{color:#000;background:#fff;transition:all 0.4s;}
+
+/* ////////////////////////// */
+
+
+/* ////////////////////////// */
+#main{z-index:2;position:relative;width:100%;height:auto;overflow:hidden;}
+#section1 {z-index:1;position:relative;width:100%;height:auto;background:url(../img/slider-img4.jpg) no-repeat 0 -35px fixed;background-size:cover;}
+
+/* 너비 1170 공통 클래스 */
+.section-wrap{position:relative;width:100%;max-width:1170px;height:auto;margin:0 auto;}
+.section-wrap1,
+.section-wrap6,
+.section-wrap7,
+.section-wrap9{width:100%;max-width:100%;height:auto;margin:0 auto;}
+
+/* 섹션타이틀 공통 클래스 */
+.section-title{font-size:28px;font-weight:700;transform:scale(1.2,.9);text-align:center;}
+.section-title-separator{text-align:center;padding:20px 0 90px 0;}
+
+
+
+.section-wrap1{position:relative;}
+.section-wrap1>h2{z-index:2;position:absolute;width:100%;top:50%;margin-top:-150px;left:0;text-align:center;}
+.section-wrap1>h2>img{width:100%;max-width:642px;height:auto;padding:0 50px;}
+.blurBt{z-index:1;position:absolute;top:0;left:0;width:100%;height:100%;background:#222;opacity:.7;}
+.nextBt{z-index:3;position:absolute;bottom:60px;left:50%;margin-left:-16px;width:32px;height:32px;}
+
+#section2 {z-index:1;position:relative;width:100%;height:auto;background:url(../img/restaurant-img1.jpg) no-repeat 0 0 fixed;background-size:cover;}
+.section-wrap2{width:100%;}
+.foodInfomationBox{position:absolute;top:50%;margin-top:-275px;right:0;padding:80px;width:100%;max-width:290px;height:auto;background:#fff;outline:8px solid #fdd947;outline-offset:-28px;}
+.foodInfomationBox>li{text-align:center;}
+.foodInfomationBox>li:nth-child(1)>p{padding-bottom:20px;}
+.foodInfomationBox>li>h2{font-size:28px;color:#614c45;font-weight:700;transform:scale(1.2,.9);padding-bottom:10px;}
+.foodInfomationBox>li>h3{font-size:11px;}
+.foodInfomationBox>li:nth-child(4)>p{padding:30px 0;}
+.foodInfomationBox>li:nth-child(5)>p{line-height:160%;font-size:14px;letter-spacing:.5px;}
+.foodInfomationBox>li>p{width:auto;}
+.foodInfomationBox>li:nth-child(1)>p>img{width:100%;max-width:45px;}
+.foodInfomationBox>li:nth-child(4)>p>img{width:100%;max-width:178px;}
+.foodInfomationBox>li:last-child>p>a>img{width:100%;max-width:32px;}
+.sec2NextBt{bottom:20%;}
+#section3 {z-index:1;position:relative;width:100%;height:auto;background:url(../img/restaurant-img2.jpg) no-repeat 0 0 fixed;background-size:cover;}
+.section-wrap3{width:100%;}
+
+#section3 .foodInfomationBox{left:0;}
+#section4 {z-index:1;position:relative;width:100%;height:auto;background:url(../img/restaurant-img3.jpg) no-repeat 0 0 fixed;background-size:cover;}
+.section-wrap4{width:100%;}
+
+#section5 {z-index:1;position:relative;width:100%;height:auto;padding:130px 0;}
+.section5-content-wrap{width:100%;}
+.section5-content-wrap>li>p>img{width:100%;max-width:744px;}
+.section5-content-wrap>li:nth-child(1){float:left;width:63.58974358974359%;}
+.section5-content-wrap>li:nth-child(2){float:right;width:33.33333333333333%;}
+
+.section5-right-wrap{padding:150px 0 0 40px;}
+.section5-right-wrap>li{width:100%;}
+.section5-right-wrap>li>h4{font-size:15px;padding-bottom:20px;}
+.section5-right-wrap>li>h3{font-size:35px;color:#ababab;padding-bottom:20px;line-height:115%;}
+.hLine40{width:40px;height:4px;background:#c8a64b;}
+.section5-right-wrap>li:nth-child(4)>p{line-height:160%;padding:30px 0;font-size:14px;}
+.section5-right-wrap>li>p>a{position:relative;left:0;top:0;margin:0;display:block;width:146px;padding:8px 0;background:transparent;color:#000;border:3px solid #000;font-weight:600;text-align:center;font-size:14px;height:14px;box-sizing:content-box;}
+.section5-right-wrap>li>p>a:hover{background:#000;color:#fff;border:3px solid #000;}
+
+#section6 {z-index:1;position:relative;width:100%;height:auto;}
+.section-content-wrap6{width:100%;}
+.section-content-wrap6>li{position:relative;float:left;width:33.33333%;height:740px;overflow:hidden;}
+.section-content-wrap6>li>div.section6-small-box{margin:0 15px;width:auto;height:740px;overflow:hidden;}
+.section-content-wrap6>li:nth-child(1)>div{background:url(../img/restaurant-img6.jpg) no-repeat center center; background-size:cover;}
+.section-content-wrap6>li:nth-child(2)>div{background:url(../img/restaurant-img17.jpg) no-repeat center center;background-size:cover;}
+.section-content-wrap6>li:nth-child(3)>div{background:url(../img/restaurant-img18.jpg) no-repeat center center;background-size:cover;}
+.section-content-box-wrap6{z-index:1;position:relative;top:170.203px;width:100%;max-width:274.328px;height:347.594px;background:#fff;margin:0 auto;padding:2.22222222222222%;outline:6px solid #efefef;outline-offset:-26px;}
+.section-content-box-wrap6>li{text-align:center;}
+.section-content-box-wrap6>li>h2{padding:20px 0 30px 0;}
+.section-content-box-wrap6>li>h2>img{width:100%;max-width:150px;}
+.section-content-box-wrap6>li>h3{font-size:20px;color:#c8a64b;padding-bottom:15px;}
+.section-content-box-wrap6>li>h4{font-size:11px;padding-bottom:25px;}
+.section-content-box-wrap6>li>p{width:100%;}
+.section-content-box-wrap6>li>p>img{width:100%;max-width:142px;}
+
+.section-content-wrap6>li>div.section6-big-box{z-index:2;position:absolute;top:0;left:0;width:100%;height:100%;background:transparent;}
+.section6-big-box-div{position:relative;top:-100px;width:auto;margin:50px 10.23622047244094%;height:640px;outline:8px solid #c8a64b;outline-offset:-8px;opacity:0;transition:all .6s;background:#fff;}
+.section6-big-box-div.addBigBox{top:0;opacity:1;transition:all .6s;}
+
+.section6-big-box-div-ul{padding:30px 7.8740157480315%;width:auto;}
+.section6-big-box-div-ul>li{border-bottom:1px solid #ddd;padding:20px 0;}
+.section6-big-box-div-ul>li:last-child{border-bottom:0}
+.section6-big-box-text{width:100%;background:#fff;}
+.section6-big-box-text>li:nth-child(1){float:left;width:21.80232558139535%;}
+.section6-big-box-text>li:nth-child(2){float:right;width:75%;padding-top:10px;}
+.section6-big-box-text>li:nth-child(1)>p{position:relative;width:75px;height:75px;padding-left:10px;}
+.section6-big-box-text>li:nth-child(1)>p>img{width:100%;height:auto;border-radius:50%;}
+.section6-big-box-text>li:nth-child(2)>h5{font-size:13px;font-weight:600;color:#614c45;line-height:160%;}
+.section6-big-box-text>li:nth-child(2)>p{padding-right:20px;font-size:13px;color:#614c45;line-height:160%;}
+
+.aBt{z-index:3;cursor:default;position:absolute;top:0;left:0;width:100%;height:100%;background:transparent;}
+
+.section8-spectial-Title{width:100%;padding-top:30px;}
+.section8-spectial-Title>li{padding:7px 0;text-align:center;}
+.section8-spectial-Title>li>h3{font-size:18px;font-weight:500;color:#fff;}
+.section8-spectial-Title>li>h4{font-size:11px;font-weight:500;color:#ababab;}
+
+
+#section7 {z-index:1;position:relative;width:100%;height:auto;padding-top:130px;}
+.section-wrap7{overflow:hidden;}
+.section7-chef-wrap{width:100%;}
+.section7-chef-wrap>li{float:left;width:25%;height:auto;}
+.section7-chef-wrap>li>div{position:relative;margin:0 15px;overflow:hidden;}
+.section7-chef-wrap>li>div>img{width:100%;transform:scale(1);opacity:1;transition:all 0.6s;}
+.section7-chef-wrap>li>div>img.addImgScale{transform:scale(1.2);opacity:.2;transition:all 0.6 sease-out;}
+
+.section7-chef-nameCard-wrap{position:absolute;bottom:-400px;left:0;width:100%;height:auto;background:transparent;transition:all 0.6s;}
+.section7-chef-nameCard-wrap.addImgScale{bottom:50px;transition:all 0.6s;}
+.section7-chef-nameCard-wrap-ul{background:#614c45;margin:0 15.51312649164678%;padding:9.54653937947494%;}
+.section7-chef-nameCard-wrap-ul>li{text-align:center;}
+.section7-chef-nameCard-wrap-ul>li>h3{color:#c8a64b;font-size:20px;padding-bottom:10px;}
+.section7-chef-nameCard-wrap-ul>li>h4{color:#ababab;font-size:11px;padding-bottom:20px;}
+.section7-chef-nameCard-wrap-ul>li:nth-child(4)>p{color:#ababab;font-size:14px;line-height:160%;padding-bottom:20px;}
+.section7-chef-nameCard-wrap-ul>li:nth-child(1){padding-bottom:30px;}
+
+#section7 .hLine40{width:30px;margin:0 auto;}
+.s7aBt{z-index:3;cursor:default;position:absolute;top:0;left:0;width:100%;height:100%;background:transparent;}
+
+
+#section8 {z-index:1;position:relative;width:100%;height:auto;background:url(../img/restaurant-img24.jpg) no-repeat 0 0 fixed;background-size:cover;padding:130px 0;}
+
+.section-wrap8>h2{position:relative;width:auto;text-align:center;padding:0 50px 90px 50px;}
+.section-wrap8>h2>img{width:95%;max-width:483px;}
+
+
+.section8-spectial-wrap{width:100%;}
+.section8-spectial-wrap>li{float:left;width:33.33333%;}
+.section8-spectial-wrap>li>div{position:relative;margin:0 11%;overflow:visible;}
+.section8-spectial-wrap>li>div>img{z-index:0;position:relative;width:100%;transform:scale(1);transition:all 0.6s;}
+.section8-spectial-wrap>li>div>img.addSec8Scale{transform:scale(1.15);transition:all 0.6s;}
+
+.priceTag{z-index:1;position:absolute;top:0;right:0;width:90px;height:90px;background:#dc3535;border-radius:50%;}
+.priceTag>ul{position:absolute;top:50%;margin-top:-17px;left:0;width:100%;}
+.priceTag>ul>li{color:#fff;font-weight:600;text-align:center;}
+.priceTag>ul>li:nth-child(1){font-size:11px;padding-bottom:5px;}
+.priceTag>ul>li:nth-child(2){font-size:18px;}
+
+.specialBt{z-index:2;position:absolute;top:0;left:0;width:100%;height:100%;cursor:default;}
+
+
+#section9 {z-index:1;position:relative;width:100%;height:auto;padding-top:130px;overflow:hidden;}
+.section9-gallery-button-wrap{width:536px;margin:0 auto;}
+
+.section9-gallery-button-wrap>li{float:left;margin:0 30px;}
+.section9-gallery-button-wrap>li>a{display:block;position:relative;padding-bottom:10px;color:#929292;font-size:13px;font-weight:600;transition:all 0.3s;}
+.section9-gallery-button-wrap>li>a:hover{color:#000;transition:all 0.3s;}
+.section9-gallery-button-wrap>li>a:focus{color:#000;transition:all 0.3s;}
+.section9-gallery-button-wrap>li>a>i{display:block;position:absolute;bottom:0;left:0;width:100%;height:2px;background:#d8b75f;transform:scale(0,1);transition:all 0.3s;}
+.section9-gallery-button-wrap>li>a:hover>i{transform:scale(1,1);transition:all 0.3s;}
+.section9-gallery-button-wrap>li>a:focus>i{transform:scale(1,1);transition:all 0.3s;}
+
+/* Gallery Image */
+.section9-Gallery-wrap{position:relative;width:100%;height:auto;margin-top:60px;}
+.section9-Gallery-wrap>li{position:absolute;width:25%;height:auto;overflow:hidden;transition:all 0.6s;}
+
+	/* Image & Title Wrap */
+	.gallery-img-txt-wrap{width:100%;transform:scale(0);transition:all 0.3s ease-out;}
+	.gallery-img-txt-wrap.addScaleBox{transform:scale(1);transition:all 0.3s ease-in;}
+	.gallery-img-txt-wrap>li{width:100%;position:relative;height:auto;}
+	.gallery-img-txt-wrap>li>p{width:100%;}
+	.gallery-img-txt-wrap>li>p>img{width:100%;cursor:url(../img/icon-zoom.png),auto;transition:all 0.3s;}
+	.gallery-img-txt-wrap>li>p>img:hover{opacity:.6;transition:all 0.3s;}
+	.gallery-img-txt-wrap>li>a{position:absolute;top:0;left:0;width:100%;height:auto;display:block;padding:30px 0;text-align:center;background:#fff;cursor:pointer;}
+	.gallery-img-txt-wrap>li>a>i{display:block;text-transform:uppercase;padding:7px 0;}
+	.gallery-img-txt-wrap>li>a>i:nth-child(1){font-size:16px;font-weight:600;color:#212121;}
+	.gallery-img-txt-wrap>li>a>i:nth-child(2){font-size:11px;font-weight:500;color:#626262;}
+
+#section10{z-index:1;position:relative;width:100%;height:auto;padding:130px 0;}
+.section-wrap10{position:relative;width:100%;max-width:975px;margin:0 auto;}
+.section-wrap10-slide-wrap{position:relative;width:100%;height:auto;overflow:hidden;cursor:url(../img/icon-move.png),auto;}
+.section-wrap10-slide-wrap>li{position:relative;width:100%;height:auto;top:0;}
+.section-wrap10-slide-wrap>li:nth-child(1){position:relative;left:0%;}
+.section-wrap10-slide-wrap>li:nth-child(2){position:absolute;left:100%;}
+.section-wrap10-slide-wrap>li:nth-child(3){position:absolute;left:200%;}
+
+/* 슬라이드 내용 */
+.s10Slide-content{width:100%;height:auto;}
+.s10Slide-content>li{float:left;height:auto;}
+.s10Slide-content>li:nth-child(1){width:40%;}
+.s10Slide-content>li:nth-child(1)>p{float:right;position:relative;width:100%;max-width:216px;height:auto;text-align:right;}
+.s10Slide-content>li:nth-child(1)>p>i{position:absolute;top:50%;margin-top:-55px;right:-30px;width:auto;height:55px;font-size:55px;color:#614c45;}
+.s10Slide-content>li:nth-child(1)>p>img{width:100%;height:auto;border:8px solid #fff;border-radius:50%;box-sizing:border-box;}
+.s10Slide-content>li:nth-child(2){width:60%;}
+.s10Slide-content-right-wrap{padding:0 180px 0 80px;}
+.s10Slide-content-right-wrap>li{text-align:left;padding-bottom:20px;}
+.s10Slide-content-right-wrap>li>i{font-size:17px;color:#c8a64b;margin-right:7px;}
+.s10Slide-content-right-wrap>li>h2{font-size:18px;color:#828282;text-transform:uppercase;}
+.s10Slide-content-right-wrap>li:nth-child(3)>p{line-height:180%;font-size:13px;color:#828282;}
+
+.s10Arrow-left-wrap{position:absolute;top:50%;left:-15px;width:15px;height:30px;margin-top:-15px;}
+.s10Arrow-left-wrap>a{color:#000;font-size:30px;}
+.s10Arrow-right-wrap{position:absolute;top:50%;right:-15px;width:15px;height:30px;margin-top:-15px;}
+.s10Arrow-right-wrap>a{color:#000;font-size:30px;}
+
+
+
+#section11{z-index:1;position:relative;position:relative;width:100%;height:auto;background:url(../img/slider-img6.jpg) no-repeat 0 0 fixed;background-size:cover;padding:130px 0;}
+.section11-blur-bg{z-index:1;position:absolute;top:0;left:0;width:100%;height:100%;background:#252525;opacity:0.8;}
+.section-wrap11{z-index:2;position:relative;}
+
+.section11-content-wrap{width:100%;height:auto;}	
+.section11-content-wrap>li{float:left;width:50%;height:auto;}	
+.section11-content-wrap>li>ul{width:auto;height:auto;margin:15px;}	
+.section11-content-wrap>li>ul>li{float:left;width:49.8%;height:auto;max-height:276.375px;}	
+.section11-content-wrap>li>ul>li:nth-child(1){overflow:hidden;}	
+.section11-content-wrap>li>ul>li:nth-child(1)>a>img{width:100%;transform:scale(1);transition:all 0.6s;}	
+.section11-content-wrap>li>ul>li:nth-child(1)>a:hover>img{transform:scale(1.1);transition:all 0.6s;}	
+.section11-content-wrap>li>ul>li:nth-child(1)>a:focus>img{transform:scale(1.1);transition:all 0.6s;}	
+.section11-content-wrap>li>ul>li:nth-child(2){background:#fff;position:relative;overflow:visible;}
+.section11-content-wrap>li>ul>li:nth-child(2):before{content:'';display:block;position:absolute;left:-30px;margin-top:-15px;top:50%;border-right:15px solid #fff;border-left:15px solid transparent;border-top:15px solid transparent;border-bottom:15px solid transparent;overflow:hidden;}
+.section11-content-wrap>li>ul>li:nth-child(2)>ul{width:auto;height:auto;padding:70px 36px;}	
+.section11-content-wrap>li>ul>li:nth-child(2)>ul>li{text-align:center;padding-bottom:20px;}	
+.section11-content-wrap>li>ul>li:nth-child(2)>ul>li>h5{font-size:11px;color:#ababab;}	
+.section11-content-wrap>li>ul>li:nth-child(2)>ul>li>h4{font-size:18px;color:#626262;line-height:140%;}	
+.section11-content-wrap>li>ul>li:nth-child(2)>ul>li>p.hLine40{margin:0 auto;}	
+
+#section11 .section-title{color:#fff;}
+
+
+#section12{z-index:1;position:relative;width:100%;height:auto;background:url(../img/restaurant-img40.jpg) no-repeat center center;background-size:cover;padding:130px 0;}
+.section-wrap12{text-align:center;}
+.section-wrap12>h3{font-size:20px;color:#626262;padding-bottom:30px;}
+.section-wrap12>h2{font-size:40px;color:#614c45;font-weight:700;padding-bottom:50px;}
+.section-wrap12>p{width:160px;margin:0 auto;}
+.section-wrap12>p>a{display:block;width:100%;padding:15px 0;border:2px solid #000;background:#000;color:#fff;font-size:13px;font-weight:600;transition:all 0.3s;text-transform:uppercase;letter-spacing:1px;}
+.section-wrap12>p>a:hover{background:transparent;color:#000;transition:all 0.3s;}
+
+#section13{z-index:1;position:relative;width:100%;height:auto;padding:130px 0;}
+.section13-counter-wrap{width:100%;height:auto;}
+.section13-counter-wrap>li{float:left;width:25%;height:auto;}
+.section13-counter-wrap>li>ul{width:auto;height:auto;}
+.section13-counter-wrap>li>ul>li{text-align:center;padding:7px 0;}
+.section13-counter-wrap>li>ul>li>h2{font-family:'Montserrat';font-size:35px;font-weight:700;color:#614c45;text-decoration:none;}
+.section13-counter-wrap>li>ul>li>p{font-size:11px;font-weight:500;color:#614c45;}
+.section13-counter-wrap>li>ul>li>i{font-size:25px;color:#c8a64b;}
+
+#section14{z-index:1;position:relative;width:100%;height:auto;padding:130px 0;border-top:1px solid #ddd;}
+
+.section14-form-wrap{width:100%;}	
+.section14-form-wrap>li{height:auto;}	
+.section14-form-wrap>li:nth-child(1){float:left;width:40%;}	
+
+.section14-form-left-wrap{width:100%;}
+.section14-form-left-wrap>li{padding-bottom:70px;}
+
+.section14-form-left-content-wrap{width:auto;padding:0 15px;}
+.section14-form-left-content-wrap>li{float:left;}
+.section14-form-left-content-wrap>li>p>i{font-size:40px;color:#c8a64b;}
+.section14-form-left-content-wrap>li>ul{width:auto;}
+.section14-form-left-content-wrap>li>ul>li{padding-bottom:13px;}
+.section14-form-left-content-wrap>li>ul>li>h3{font-size:15px;color:#000;font-weight:600;}
+.section14-form-left-content-wrap>li>ul>li>h4{font-size:14px;color:#626262;font-weight:400;}
+.section14-form-left-content-wrap>li>ul>li>p{font-size:14px;color:#626262;}
+.section14-form-left-content-wrap>li:nth-child(1){width:20%;}
+.section14-form-left-content-wrap>li:nth-child(2){width:80%;}
+
+
+.section14-form-wrap>li:nth-child(2){float:right;width:60%;}	
+.section14-form-right-wrap{padding:0 15px;}
+.section14-form-right-wrap>li{padding-bottom:20px;}
+.section14-form-right-wrap>li:nth-child(3)>div  span{display:none;}
+.section14-form-right-wrap>li:nth-child(3)>div{background:#fff url(../img/select-arrow.png) no-repeat 97% 50%;}
+.section14-form-right-wrap>li>div{position:relative;background:#fff;}
+.section14-form-right-wrap>li>div>i{z-index:1;display:block;opacity:1;transition:all 0.6s;position:absolute;top:0;left:0;color:#888;font-size:14px;padding:18px 15px;}
+.section14-form-right-wrap>li>div>i.addPlace{opacity:0;transition:all 0.6s;}
+
+.section14-form-right-wrap>li:nth-child(4)>div>i{padding:12px 15px;}
+.section14-form-right-wrap>li:nth-child(5)>div{background:#fff;}
+.section14-form-right-wrap>li:nth-child(6)>div{background:transparent;}
+
+.s14select,
+.textArea,
+.inputText{z-index:2;height:50px;min-height:50px;max-height:50px;position:relative;display:block;color:#626262;width:100%;background:transparent;border:1px solid #ddd;padding:12px 15px;box-sizing:border-box;}
+
+
+#selectFood{cursor:pointer;}
+
+#irum{outline:0;}
+#irum.addAjax{outline:2px solid #c00;}
+#email{outline:0;}
+#email.addAjax{outline:2px solid #c00;}
+#message{height:100px;max-height:100px;min-height:100px;border:1px solid #ddd;padding:12px 15px;box-sizing:border-box;resize:none;outline:0;}
+#message.addAjax{outline:2px solid #c00;}
+.section14-form-right-wrap>li>div.sendMessage{display:none;transition:all 0.6s;text-align:center;background:#fff;border:2px solid #398f14;padding:20px 0;color:#000;font-size:14px;}
+.section14-form-right-wrap>li>div.sendMessage.addAjax{display:block;}
+.section14-form-right-wrap>li>div.errorMessage{display:none;transition:all 0.6s;text-align:center;background:#fdd947;border:2px solid #fdd947;padding:20px 0;color:#000;font-size:14px;}
+.section14-form-right-wrap>li>div.errorMessage.addAjax{display:block;transition:all 0.6s;}
+
+
+.submitBt{cursor:pointer;display:block;width:90px;height:42px;color:#fff;background:#000;border:2px solid #000;font-weight:600;}
+.submitBt:hover{color:#000;background:transparent;}
+
+.upLoadFile{display:inline-block;width:50%;}
+/* ////////////////////////// */
+#footer{z-index:1;position:relative;width:100%;height:auto;padding:80px 0;background:#000 url(../img/restaurant-img41.jpg) no-repeat center center;}
+.footBgCap{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(50,50,50, .8);}
+.footer-content-wrap{width:100%;}
+.footer-content-wrap>li{text-align:center;}
+.footer-content-wrap>li:nth-child(1){padding-bottom:40px;}
+.footer-content-wrap>li:nth-child(2){padding-bottom:90px;}
+.footer-content-wrap>li:nth-child(3){padding-bottom:30px;}
+.footer-content-wrap>li:nth-child(4){padding-bottom:20px;}
+
+.footer-content-wrap>li>h2{line-height:160%;font-size:15px;font-weight:500;color:#929292;}
+.footer-content-wrap>li>a>img{width:156px;height:auto;}
+
+.footer-content-wrap>li:nth-child(3)>p{width:100%;height:1px;background:#929292;}
+.footer-content-wrap>li>p{font-size:13px;color:#929292;}
+.footer-content-wrap>li>p>a{font-size:13px;color:#929292;transition:all 0.6s;}
+.footer-content-wrap>li>p>a:hover{color:#888;transition:all 0.6s;}
+
+.foot-icon-wrap{width:217px;height:30px;margin:0 auto;}
+a.footIcon{opacity:1;transition:all 0.6s;display:block;float:left;width:30px;font-size:14px;padding:8px 0;text-align:center;color:#fff;margin:0 3px;}
+a.footIcon:hover{opacity:.7;transition:all 0.6s;}
+a.footIcon1{background:#3b5998;}
+a.footIcon2{background:#00aced;}
+a.footIcon3{background:#dd4b39;}
+a.footIcon4{background:#ea4c89;}
+a.footIcon5{background:#b00;}
+a.footIcon6{background:#007bb6;}
+
+
+/* ////////////////////////// */

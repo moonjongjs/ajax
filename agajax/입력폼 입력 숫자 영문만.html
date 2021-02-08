@@ -1,0 +1,25 @@
+$(document).ready(function(){
+
+  //한글입력 안되게 처리
+
+  $("input[name=aaa]").keyup(function(event){ 
+
+   if (!(event.keyCode >=37 && event.keyCode<=40)) {
+
+    var inputVal = $(this).val();
+
+    $(this).val(inputVal.replace(/[^a-z0-9]/gi,''));
+
+   }
+
+  });
+
+});
+
+
+
+영문,숫자만:<input type="text" name="aaa" />
+
+
+
+출처: https://templar.tistory.com/2 [Templar Archive]

@@ -1,0 +1,83 @@
+
+닷홈
+moonjong2.dothome.co.kr/myadmin
+
+개인도메인
+moonjong.co.kr/myadmin
+
+
+회원관리
+입력폼에서 DB에 저장하기
+////////////////////////////////////////////////////////////////////////
+
+개인pc 접근방식
+
+데이터베이스의 서버이름(Server)        : localhost
+데이터베이스의 사용자(User)이름(Nane)  : root
+데이터베이스의 비밀번호(Password)      : autoset
+데이터베이스의 이름(Data basename)     : ec
+
+
+
+닷홈 접근방식
+
+데이터베이스의 서버이름(Server)        : localhost
+데이터베이스의 사용자(User)이름(Nane)  : moonjong2
+데이터베이스의 비밀번호(Password)      : anstjswhd0105
+데이터베이스의 이름(Data basename)     : moonjong2
+
+
+
+
+1. 데이터베이스 만들기(생성하기)
+
+    MariaDB [member]> create database ec;
+    Query OK, 1 row affected (0.012 sec)
+
+
+2. 만들어진 데이터베이스 사용하기
+
+    MariaDB [member]> use ec;
+    Database changed
+
+
+3. 만들어진 데이터베이스 안에 테이블 만들기
+
+    MariaDB [ec]> create table address
+        ->     (
+        ->     idx int not null auto_increment,
+        ->     name varchar(50) not null,
+        ->     tel varchar(15) not null,
+        ->     addr varchar(250) not null,
+        ->     primary key(idx)
+        ->     );
+    Query OK, 0 rows affected (0.174 sec)
+
+
+4. 만들어진 테이블 구조 확인하기(Describe)
+
+    MariaDB [ec]> desc address;
+    +-------+--------------+------+-----+---------+----------------+
+    | Field | Type         | Null | Key | Default | Extra          |
+    +-------+--------------+------+-----+---------+----------------+
+    | idx   | int(11)      | NO   | PRI | NULL    | auto_increment |
+    | name  | varchar(50)  | NO   |     | NULL    |                |
+    | tel   | varchar(15)  | NO   |     | NULL    |                |
+    | addr  | varchar(250) | NO   |     | NULL    |                |
+    +-------+--------------+------+-----+---------+----------------+
+    4 rows in set (0.007 sec)
+
+
+
+
+//1. 닷홈에 테이블 만들기
+//php 코딩 - 
+//파일명 - createTable_address.php
+[1] 헤더코딩 
+[2] sql - table 생성  및 sql실행문 코딩
+[3] 푸터코딩
+[4] 닷홈에 업로드
+[5] 닷홈에 업로드된 파일 실행
+
+
+

@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>  
+<html lang='ko'>
+<head>
+	<title>마켓컬리 | 회원가입 </title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='format-detection' content='telephone=no'>
+
+	<meta name='Title' content='마켓컬리'>
+	<meta name='Subject' content='마켓컬리 웹앱 | 마이컬리'>
+	<meta name='Publisher' content='Moon Seonjong'>
+	<meta name='Location' content='Seoul Korea'>
+	<meta name='Author' content='마켓컬리'>
+	<meta name='Author-Date' content='2019-09-24'>
+	<meta name='Copyright' content='마켓컬리'>
+	<meta name='Description' content='샛별이 뜰 때가 가장 신선할 때! 당일 수확 채소, 과일, 맛집 음식까지 내일 아침 문 앞에서 만나요!'>
+	<meta name='Classification' content='인터넷 종합 쇼핑몰'>
+	<meta name='Keywords' content='쇼핑몰, 선물, 옷, 인터넷 종합 쇼핑몰, 쇼핑'>
+	<meta name='Robots' content='index, follow'>
+
+
+	<link rel='shortcut icon' 	 href='img/ico_marketkurly.png'>
+	<link rel='apple-touch-icon' href='img/ico_marketkurly.png'>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+	<link rel='stylesheet' href='css/lib/jquery.mobile-1.4.5.min.css'>
+	<link rel='stylesheet' href='css/gaibStyle.css'>
+	<!-- <link rel='stylesheet' href='css/myKulyResponse.css'> -->
+
+
+	<script src='js/lib/jquery-1.11.1.min.js'></script>
+	<script src='js/lib/jquery.mobile-1.4.5.min.js'></script>
+	<script src='js/lib/PHP_jQuery_Mobile_link.js'></script>
+	
+	<!-- <script src='js/lib/jquery.easing.1.3.js'></script> -->
+	<!-- <script src='js/lib/prefixfree.min.js'></script> -->
+
+
+	<!-- User JS File -->
+	<script src='js/member.js'></script>
+	<script src='js/FormGaib.js'></script>
+	
+	
+	
+</head>
+<body>
+	
+	<div data-role='page' id='gaib'>
+		<div data-role='header'  id='header'>
+			<div id='header-fixed-wrap'>
+			
+				<div id='header-popup'>
+					<p>지금 가입하고 인기상품 <span>100</span>에 받아가세요</p>
+					<span class='hpopCloseBtn-wrap'>
+						<a href='#' class='hpopCloseBtn' title='close'>
+							<img src='img/ico_close_333_100x100.png' alt='close'>
+						</a>
+					</span>
+				</div>
+				
+				<div id='header-title'>
+					<h1>회원가입</h1>
+					<span class='prevPageBtn-wrap'><a href='#' class='prevPageBtn'><img src='img/ico_prev_333_100x100.png' alt=''></a></span>
+					<span class='cartBtn-wrap'><a href='#' class='cartBtn'><img src='img/ico_cart_333_100x100-_1_.png' alt=''></a></span>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div data-role='content' id='content'>
+			<div id='content-wrap'>
+				<form name='gaibform' id='gaibform' action='gaib.php' method='post'>
+					<ul id='gaibform-wrap'>
+						<li>
+							<div class='gaibform-content-wrap'>
+								<label class='input-label'>아이디</label>
+								<div class='input-wrap floatclear'>
+									<input type='text' name='id' id='id' class='inputText' value='' placeholder='예: marketkuly12'>
+									<button class='dupulicateCheckBtn'>중복확인</button>
+								</div>
+								<div class='guid-wrap'>
+									<p>6자 이상의 영문 혹은 영문과 숫자를 조합</p>
+									<p>아이디 중복확인</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class='gaibform-content-wrap'>
+								<label class='input-label'>비밀번호</label>
+								<div class='input-wrap floatclear'>
+									<input type='text' name='pass' id='pass' class='inputText' value='' placeholder='비밀번호를 입력해주세요.'>
+								</div>
+								<div class='guid-wrap'>
+									<p>10자 이상 입력</p>
+									<p>영문/숫자/특수문자(공백 제외)만 허용하며, 2개 이상 조합</p>
+									<p>동일한 숫자 3개 이상 연속 사용 불가</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class='gaibform-content-wrap'>
+								<label class='input-label-id'>비밀번호 확인</label>
+								<div class='input-wrap floatclear'>
+									<input type='text' name='id' id='id' class='inputText' value='' placeholder='예: marketkuly12'>
+								</div>
+								<div class='guid-wrap'>
+									<p>동일한 비밀번호를 입력해주세요</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class='gaibform-content-wrap'>
+								<label class='input-label-id'>이름</label>
+								<div class='input-wrap floatclear'>
+									<input type='text' name='id' id='id' class='inputText' value='' placeholder='고객님의 이름을 입력하세요.'>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class='gaibform-content-wrap'>
+								<label class='input-label-id'>이메일</label>
+								<div class='input-wrap floatclear'>
+									<input type='text' name='id' id='id' class='inputText' value='' placeholder='예: marketkurly@kurly.com'>
+								</div>
+
+							</div>
+						</li>
+						<li>
+							<div class='gaibform-content-wrap'>
+								<label class='input-label-id'>휴대폰</label>
+								<div class='input-wrap floatclear'>
+									<input type='text' name='id' id='id' class='inputText' value='' placeholder='- 없이 숫자만'>
+									<button class='dupulicateCheckBtn'>인증번호받기</button>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class='gaibform-content-wrap'>
+								<div class='input-wrap floatclear'>
+									<input type='text' name='id' id='id' class='inputText' value='' placeholder=''>
+									<button class='dupulicateCheckBtn'>인증번호확인</button>
+								</div>
+								<div class='guid-wrap'>
+									<p>6자 이상의 영문 혹은 영문과 숫자를 조합</p>
+									<p>아이디 중복확인</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class='gaibform-content-wrap'>
+								<div class='input-wrap floatclear'>
+									<button class='addressSeachBtn'><span><img src='img/ico_search_fff_40x40.png' alt=''></span><span>주소검색</span></button>
+								</div>
+							</div>
+						</li>
+						<li>
+								<div class='gaibform-content-wrap'>
+									<label class='input-label-id'>생년월일</label>
+								</div>	
+								
+								<div class='birth-day-wrap'>
+									<ul class='birth-day floatclear'>
+										<li>
+											<div class='gaibform-content-wrap'>
+												<div class='input-wrap floatclear'>
+													<input type='number' min='0' max='3000' name='year' id='year' class='inputText' value='' placeholder='- 없이 숫자만'>
+												</div>
+											</div>						
+										</li>
+										
+										<li>
+											<span>/</span>		
+										</li>
+										
+										<li>
+											<div class='gaibform-content-wrap'>
+												<div class='input-wrap floatclear'>
+													<input type='number' min='1' max='12'name='month' id='month' class='inputText' value='' placeholder='- 없이 숫자만'>
+												</div>
+											</div>						
+											
+										</li>
+										
+										<li>
+											<span>/</span>		
+										</li>
+										
+										<li>
+											<div class='gaibform-content-wrap'>
+												<div class='input-wrap floatclear'>
+													<input type='number' min='1' max='31' name='day' id='day' class='inputText' value='' placeholder='- 없이 숫자만'>
+												</div>
+											</div>						
+											
+										</li>
+
+									</ul>
+								</div>
+						</li>
+						
+						<li>
+						
+							<fieldset>						
+							<!-- 성별 라디오 시작  -->
+							<div class='gender-wrap'>
+								<div class='gaibform-content-wrap'>
+									<legend>성별</legend>
+								</div>	
+							
+								<ul>
+									<li>
+										<div class='radio-wrap'>
+											<input type='radio' name='gender' id='male' class='radio addRadio' value=''>
+											<label for='male'  class='radioBtn1'>남자</label>
+										</div>
+									</li>
+									<li>
+										<div class='radio-wrap'>
+											<input type='radio' name='gender' id='female' class='radio' value=''>
+											<label for='female'  class='radioBtn1'>여자</label>
+										</div>
+									</li>
+									<li>
+										<div class='radio-wrap'>
+											<input type='radio' name='gender' id='ungender' class='radio' value=''>
+											<label for='ungender'  class='radioBtn1'>선택안함</label>
+										</div>
+									</li>
+									
+								</ul>
+							</div>	
+							<!-- 성별 라디오 끝  -->		
+							</fieldset>
+							
+							
+							<!-- 추천인 라디오 시작  -->
+							<fieldset>
+							<div class='gender-wrap'>
+								<div class='gaibform-content-wrap'>
+									<legend>추가입력 사항</legend>
+									<p>추천인 아이디와 참여 이벤트명 중 하나만 선택 가능합니다.</p>
+								</div>	
+							
+								<ul>
+									<li>
+										<div class='radio-wrap'>
+											<input type='radio' name='gender' id='chooid' class='radio2 addRadio' value=''>
+											<label for='chooid'  class='radioBtn2'>추천인 아이디</label>
+										</div>
+									</li>
+									<li>
+										<div class='radio-wrap'>
+											<input type='radio' name='gender' id='eventname' class='radio2' value=''>
+											<label for='eventname'  class='radioBtn2'>참여 이벤트명</label>
+										</div>
+									</li>
+								</ul>
+							</div>	
+							<!-- 성별 라디오 끝  -->
+							</fieldset>
+							
+							
+						</li>
+						
+						
+						<li>
+							<!-- 이용약관 위 구분 선 두께 10px 회색   -->
+						</li>
+						
+						
+						
+						<li>
+							<!-- 이용약관 시작  -->
+							<fieldset>
+							<div class='gaibform-content-wrap'>
+								<legend class='title'>이용약관동의*</legend>
+							</div>	
+							
+							<div class='check-ok-wrap'>
+								<div class='all-check-wrap'>
+									<input type='checkbox' name='allcheck0' id='allcheckBtnid' class='gaibChkall' value='전체동의'>
+									<label for='allcheckBtnid' class='allcheckBtn'>전체동의</label>
+								</div>
+								
+								<div class='all-check-list-wrap'>
+									<ul>
+										<li>
+											<div class='all-check-wrap'>
+												<input type='checkbox' name='allcheck1' id='allcheck1' class='gaibChk' value='이용약관'>
+												<label for='allcheck1' class='listcheckBtn'>이용약관(필수)</label>
+											</div>
+										</li>
+										<li>
+											<div class='all-check-wrap'>
+												<input type='checkbox' name='allcheck2' id='allcheck2' class='gaibChk' value='개인정보처리방침필수'>
+												<label for='allcheck2' class='listcheckBtn'>개인정보처리방침필수(필수)</label>
+											</div>
+										</li>
+										<li>
+											<div class='all-check-wrap'>
+												<input type='checkbox' name='allcheck3' id='allcheck3' class='gaibChk' value='개인정보처리방침선택'>
+												<label for='allcheck3' class='listcheckBtn'>개인정보처리방침(선택)</label>
+											</div>
+										</li>
+										<li>
+											<div class='all-check-wrap'>
+												<input type='checkbox' name='allcheck4' id='allcheck4' class='gaibChk gaibChk4All' value='무료배송, 할인쿠폰 등 혜택/정보 수신'>
+												<label for='allcheck4' class='listcheckBtn listcheck4allBtn'>무료배송, 할인쿠폰 등 혜택/정보 수신(선택)</label>
+											</div>
+											<ul class='all-check4-wrap'>
+												<li>
+													<div class='all-check-wrap'>
+														<input type='checkbox' name='allcheck4-1' id='allcheck4-1' class='gaibChk gaibChk4' value='무료배송, 할인쿠폰 등 혜택/정보 수신'>
+														<label for='allcheck4-1' class='listcheck4Btn'>SMS</label>
+													</div>
+												</li>
+												<li>
+													<div class='all-check-wrap'>
+														<input type='checkbox' name='allcheck4-2' id='allcheck4-2' class='gaibChk gaibChk4' value='무료배송, 할인쿠폰 등 혜택/정보 수신'>
+														<label for='allcheck4-2' class='listcheck4Btn'>이메일</label>
+													</div>
+												</li>
+											</ul>
+											<div class='sns-guid-img'>
+												<img src='img/img_event_check_x2.png' alt=''>
+											</div>
+										</li>
+										<li>
+											<div class='all-check-wrap'>
+												<input type='checkbox' name='allcheck7' id='allcheck7' class='gaibChk' value='본인은 만 14세 이상입니다.'>
+												<label for='allcheck7' class='listcheckBtn'>본인은 만 14세 이상입니다.(필수)</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
+							</fieldset>
+							
+						</li>
+						
+						<li>
+							<div class='gaibBtn-wrap'>
+								<button class='gaibBtn'>가입하기</button>
+								<p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
+							</div>
+							
+						</li>
+					</ul>	
+					
+				</form>
+			</div>
+		</div>		
+		<div data-role='footer'  id='footer'>
+			<div id='footer-fixed-wrap'>
+				
+				<div class='footer-nav'>
+					<ul>
+						<li><a href='#' class='footNavBtn addfootnav'><span></span></a></li>
+						<li><a href='#' class='footNavBtn'><span></span></a></li>
+						<li><a href='#' class='footNavBtn'><span></span></a></li>
+						<li><a href='#' class='footNavBtn'><span></span></a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+</body>
+</html>

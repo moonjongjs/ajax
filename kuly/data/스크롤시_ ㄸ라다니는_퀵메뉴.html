@@ -1,0 +1,16 @@
+<script>
+
+	//퀵메뉴
+
+	var quick_top = ($(window).innerHeight()-$('.QuickBox').innerHeight())/2;	
+		QuickBoxFn();
+
+	$(window).scroll(function(){				
+		QuickBoxFn();
+	});	
+		
+	function QuickBoxFn(){
+		$('.QuickBox').stop().animate({top:$(window).scrollTop()+quick_top},800);				
+	}
+		
+</script>
